@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,9 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: Container(),
+        backgroundColor: Colors.purple[400],
+        body: const SafeArea(
+          child: HomePage(),
+        ),
       ),
     );
   }
 }
+
